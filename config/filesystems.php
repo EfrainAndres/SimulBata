@@ -1,5 +1,4 @@
 <?php
-
 return [
 
     /*
@@ -11,7 +10,7 @@ return [
     | by the framework. The "local" disk, as well as a variety of cloud
     | based disks are available to your application. Just store away!
     |
-    */
+ */
 
     'default' => env('FILESYSTEM_DRIVER', 'local'),
 
@@ -24,7 +23,7 @@ return [
     | reason, you may specify a default "cloud" driver here. This driver
     | will be bound as the Cloud disk implementation in the container.
     |
-    */
+     */
 
     'cloud' => env('FILESYSTEM_CLOUD', 's3'),
 
@@ -39,7 +38,7 @@ return [
     |
     | Supported Drivers: "local", "ftp", "s3", "rackspace"
     |
-    */
+     */
 
     'disks' => [
 
@@ -48,18 +47,43 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'documentos' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/uploads/documentos'),
+            'url' => '/storage/uploads/documentos/',
+            'visibility' => 'public'
+        ],
+
+        'docuScript' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/uploads/scripts'),
+        ],
+
+        'sql' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/uploads/sql'),
+            'url' => '/storage/uploads/sql',
+            'visibility' => 'public',
+        ],
+        'formatos'=> [
+            'driver' => 'local',
+            'root' => storage_path('app/public/formatos'),
+            'url' => '/storage',
+            'visibility' => 'public',    
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => '/storage',
             'visibility' => 'public',
         ],
 
         's3' => [
             'driver' => 's3',
-            'key' => env('AWS_ACCESS_KEY_ID'),
-            'secret' => env('AWS_SECRET_ACCESS_KEY'),
-            'region' => env('AWS_DEFAULT_REGION'),
+            'key' => env('AWS_KEY'),
+            'secret' => env('AWS_SECRET'),
+            'region' => env('AWS_REGION'),
             'bucket' => env('AWS_BUCKET'),
         ],
 

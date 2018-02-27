@@ -36,10 +36,12 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
         $this->mapApiRoutes();
-
         $this->mapWebRoutes();
-
-        //
+        $this->mapSiceplaRoutes();
+        $this->mapSuperAdminRoutes();
+        
+        
+        
     }
 
     /**
@@ -66,8 +68,34 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapApiRoutes()
     {
         Route::prefix('api')
-             ->middleware('api')
-             ->namespace($this->namespace)
+             ->middleware('web')
+             ->namespace('App\Container\Sicepla\Src\Controllers')
              ->group(base_path('routes/api.php'));
     }
+
+    /**
+     * Rutas de Administrador
+     *
+     * @return void
+     */
+    
+
+    /*protected function mapCalisoftRoutes()
+    {
+        Route::middleware('web')
+            ->namespace('App\Container\Calisoft\Src\Controllers')
+            ->group(base_path('routes/calisoft.php'));
+    }*/
+    protected function mapSiceplaRoutes(){
+        Route::middleware('web')
+             ->namespace('App\Container\Sicepla\Src\Controllers')
+             ->group(base_path('routes/sicepla.php'));
+    }
+
+    protected function mapSuperAdminRoutes(){
+        Route::middleware('web')
+             ->namespace('App\Container\Sicepla\Src\Controllers')
+             ->group(base_path('routes/super-admin.php'));
+    }
+
 }

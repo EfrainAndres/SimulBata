@@ -2,11 +2,6 @@
 
 use Illuminate\Database\Seeder;
 
-/*
- * Modelos
- */
-use App\User;
-
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -16,16 +11,48 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        DB::table('TBL_Usuarios')->insert([
             [
-                'name' => 'root',
+                'name' => 'Code Freestyle',
                 'email' => 'root@app.com',
-                'password' => bcrypt('root')
+                'password' => bcrypt('12345'),
+                'FK_RolesId' => '1',
+                'FK_DepartamentoId' => null
             ],
             [
-                'name' => 'Alianza Verde',
-                'email' => 'siapmining@gmail.com',
-                'password' => bcrypt('alianzaverde**')
+                'name' => 'Paisa',
+                'email' => 'paisa@mail.com',
+                'password' => bcrypt('12345'),
+                'FK_RolesId' => '2',
+                'FK_DepartamentoId' => null
+            ],
+            [
+                'name' => 'Fredo',
+                'email' => 'fredo@joya.joya',
+                'password' => bcrypt('12345'),
+                'FK_RolesId' => '3',
+                'FK_DepartamentoId' => null
+            ],
+            [
+                'name' => 'Efrain',
+                'email' => 'efrain@gmail.com',                
+                'password' => bcrypt('12345'),
+                'FK_RolesId' => '4',
+                'FK_DepartamentoId' => '1'                
+            ],
+            [
+                'name' => 'Stevenson',
+                'email' => 'stevenson@gmail.com',
+                'password' => bcrypt('12345'),
+                'FK_RolesId' => '4',                
+                'FK_DepartamentoId' => '2'
+            ],
+            [
+                'name' => 'hector',
+                'email' => 'hector@gmail.com',
+                'password' => bcrypt('12345'),
+                'FK_RolesId' => '4',
+                'FK_DepartamentoId' => '3'
             ]
         ]);
     }
