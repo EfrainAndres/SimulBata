@@ -28,7 +28,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name','telefono','documento','direccion', 'email', 'password', 'foto','FK_RolesId','FK_DepartamentoId',
+        'name','telefono','documento','direccion', 'email', 'password', 'foto','FK_RolesId',
     ];
 
     /**
@@ -58,22 +58,7 @@ class User extends Authenticatable
     /**
      * Relacion evaluador -> proyectos asignados
      */
-    public function proyectos()
-    {
-        return $this->belongsToMany(Proyecto::class, 'TBL_ProyectosAsignados', 'FK_UsuarioId', 'FK_ProyectoId')
-            ->withPivot('tipo')
-            ->withTimestamps();
-    }
-
-    public function departamento(){
-        return $this->belongsTo(Departamento::class,'FK_DepartamentoId','id');
-    }
-
     public function rol(){
         return $this->belongsTo(Roles::class,'FK_RolesId','id');
-    }
-
-    public function formato(){
-        return $this->hasMany();
     }
 }

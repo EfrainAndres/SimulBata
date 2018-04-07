@@ -53,12 +53,12 @@
     ult = i;
     for (i; i < 13041 + ult; i++) {
         //chapinero 1341 , 
-        locations[i] = {lat: 4.8216230, lng: -74.3465693};
+        locations[i] = {lat: 4.8216180, lng: -74.3450872};
     }
     ult = i;
     for (i; i < 7439 + ult; i++) {
         //Santafe 7439 
-        locations[i] = {lat: 4.8216232, lng: -74.3465691};
+        locations[i] = {lat: 4.8218882, lng: -74.3456681};
     }
     ult = i;
     for (i; i < 6243 + ult; i++) {
@@ -68,17 +68,17 @@
     ult = i;
     for (i; i < 7134 + ult; i++) {
         //Usme 7134 4.512006, -74.108367
-        locations[i] = {lat: 4.8216236, lng: -74.3465689};
+        locations[i] = {lat: 4.8216314, lng: -74.3443965};
     }
     ult = i;
     for (i; i < 6100 + ult; i++) {
         //Tunjuelito 6100 4.560697, 
-        locations[i] = {lat: 4.8216238, lng: -74.3465687};
+        locations[i] = {lat: 4.8214837, lng: -74.3460186};
     }
     ult = i;
     for (i; i < 11276 + ult; i++) {
         //Bosa 11276  , 
-        locations[i] = {lat: 4.8216240, lng: -74.3465686};
+        locations[i] = {lat: 4.8212646, lng: -74.3464344};
     }
     ult = i;
     for (i; i < 8027 + ult; i++) {
@@ -88,7 +88,7 @@
     ult = i;
     for (i; i < 9404 + ult; i++) {
         //Fontibon 9404 
-        locations[i] = {lat: 4.8216244, lng: -74.3465683};
+        locations[i] = {lat:4.82128472, lng: -74.3453940};
     }
 
     

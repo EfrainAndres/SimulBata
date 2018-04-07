@@ -55,17 +55,6 @@
                             </select>                
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                   <div class="form-group form-md-line-input">
-                    <label>Dependencia</label>
-                        <select class="form-control" name="FK_DepartamentoId" id="" >
-                            <option value="">Seleccionar</option>
-                            @foreach($users as $departamento)
-                                <option value="{{$departamento->id}}">{{$departamento->nombre}}</option>
-                            @endforeach
-                        </select>                
-                    </div>
-                </div>
             </div>
             {!! Form::submit('registrar', ['class'=>'btn green-jungle']) !!}
             </div>                        

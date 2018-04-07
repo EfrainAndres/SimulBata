@@ -35,7 +35,6 @@ class UserController extends Controller
      */
     public function create()
     {
-        $users = Departamento::all();
         $roles = Roles::all();
         return view('sicepla.super-admin.super-admin-crearuser',compact('users','roles'));
     }
@@ -55,8 +54,7 @@ class UserController extends Controller
             'direccion',
             'email',
             'password',
-            'FK_RolesId',
-            'FK_DepartamentoId'
+            'FK_RolesId'
         );
         
         $user = new User($atributos);
