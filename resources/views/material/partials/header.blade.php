@@ -4,7 +4,7 @@
         {{-- BEGIN LOGO --}}
         <div class="page-logo">
             <a href="javascript:;">
-                logo o nombre!!
+                 <h3 style="color: #FFFFFF">Luminess Soft</h3> 
             </a>
             <div class="menu-toggler sidebar-toggler">
                 {{-- DOC: Remove the above "hide" to enable the sidebar toggler button on header --}}

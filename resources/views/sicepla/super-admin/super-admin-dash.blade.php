@@ -1,13 +1,13 @@
 @component('components.nav-link', [
-    'icon' => 'fa fa-users',
-    'title' => 'Usuarios',
-    'link' => route('usuarios.index')
+    'icon' => 'fa fa-map',
+    'title' => 'Mapa',
+    'link' => route('mapacom.index')
 ])
 @endcomponent
 
 @component('components.nav-link', [
-    'icon' => 'fa fa-map',
-    'title' => 'Mapa',
-    'link' => route('mapacom.index')
+    'icon' => 'fa fa-info',
+    'title' => 'Información General',
+    'link' => route('informacion')
 ])
 @endcomponent
