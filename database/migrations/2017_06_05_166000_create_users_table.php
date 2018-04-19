@@ -23,16 +23,12 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('foto')->nullable();  
             $table->integer('FK_RolesId')->unsigned();
-            $table->integer('FK_DepartamentoId')->unsigned()->nullable();
                     
             $table->rememberToken();
             $table->timestamps();
 
             $table->foreign('FK_RolesId')->references('id')
             ->on('TBL_Roles')->onUpdate('cascade');
-
-            $table->foreign('FK_DepartamentoId')->references('id')
-            ->on('TBL_Departamento')->onUpdate('cascade');
 
             
         });

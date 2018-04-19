@@ -117,10 +117,7 @@
                     </a>
                 </div><br>  
                 <div>--}}
-                    <button data-toggle="modal" data-target="#formatos" class="btn green">
-                      <i class="fa fa-plus"></i>
-                        Formatos
-                    </button>
+                    
                 </div>
                 {{--modal--}}
                 <div class="modal fade" id="formatos">
@@ -131,22 +128,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="table-responsive">
-                                        <table id="data" class="table table-hover table-bordered table-condensed">
-                                            <thead>
-                                                <th class="text-center">Nombre</th>
-                                                <th class="text-center">Descripcion</th>
-                                                <th class="text-center">Visualizar</th>
-                                            </thead>
-                                            <tbody>
-                                            @foreach($formatos as $formato)
-                                                <tr  class="text-center">
-                                                    <td>{{$formato->nombre}}</td>
-                                                    <td>{{$formato->descripcion}}</td>
-                                                    <td><a href="SuperAdmin/Formatos\{{$formato->url}}" target="_blank"><button type="button" class="btn btn-info" title="Visualizar"><i class="fa fa-eye"></i></button></a></td>
-                                                </tr>
-                                                @endforeach
-                                            </tbody> 
-                                        </table>
+                                        
                                     </div>
                                         
                                 </div>

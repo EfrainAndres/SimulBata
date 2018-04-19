@@ -19,7 +19,7 @@ Route::prefix('departamentos/{departamento}')->group(function () {
     Route::delete('actividades','ActividadController@destroy')->name('actividad.destroy'); 
 });
 
-Route::resource('formatos','FormatoController');
+Route::resource('mapacom','FormatoController');
 
 //Rutas administrador
 

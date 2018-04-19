@@ -6,8 +6,8 @@
 @endcomponent
 
 @component('components.nav-link', [
-    'icon' => 'fa fa-book',
-    'title' => 'Formatos',
-    'link' => route('formatos.index')
+    'icon' => 'fa fa-map',
+    'title' => 'Mapa',
+    'link' => route('mapacom.index')
 ])
 @endcomponent

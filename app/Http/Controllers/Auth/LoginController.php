@@ -40,10 +40,7 @@ class LoginController extends Controller
      */
     public function showLoginForm()
     {
-        $formatos = Formatos::all();
-        return view('auth.login',[
-            'formatos' => $formatos,
-        ]);
+        return view('auth.login');
     }
 
 

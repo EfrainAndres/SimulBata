@@ -18,10 +18,7 @@ class FormatoController extends Controller
      */
     public function index()
     {
-        $formatos = Formatos::all();
-        return view('sicepla.super-admin.super-admin-formatos',[
-            'formatos' => $formatos,
-        ]);
+        return view('sicepla.super-admin.super-admin-formatos');
     }
 
     /**
@@ -31,7 +28,7 @@ class FormatoController extends Controller
      */
     public function create()
     {
-        return view('sicepla.super-admin.super-admin-crearformato');
+
     }
 
     /**
@@ -42,22 +39,7 @@ class FormatoController extends Controller
      */
     public function store(FormatoStoreRequest $request)
     {
-        $url = "";
-        if ($request->hasFile('url')) {
-          $url = "Formato".'.'.time().'.'.$request->url->getClientOriginalExtension();
-          $request->url->move(public_path('SuperAdmin/Formatos'), $url);
-        } else {
-          if ('url' == null) {
-            $url = "";
-          }
-        }
-
-        Formatos::create([
-            'nombre' => $request['nombre'],
-            'descripcion' => $request['descripcion'],
-            'url' => $url,
-        ]);
-        return redirect('/formatos')->with('success','Formato Creado Correctamente');   
+         
     }
 
     /**
@@ -102,9 +84,6 @@ class FormatoController extends Controller
      */
     public function destroy($id)
     {
-        $formato = Formatos::find($id);
-        Storage::disk('formatos')->delete($formato->url);
-        $formato->delete();
-        return redirect('/formatos')->with('error','Formato Eliminado Correctamente');
+        
     }
 }

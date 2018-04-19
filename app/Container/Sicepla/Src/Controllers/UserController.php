@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Container\Sicepla\Src\Requests\UserStoreRequest;
 use App\Container\Sicepla\Src\User;
 use App\Http\Controllers\Controller;
-use App\Container\Sicepla\Src\Departamento;
 use App\Container\Sicepla\Src\Roles;
 use App\Container\Sicepla\Src\Notifications\UsuarioCreado;
 
@@ -21,9 +20,7 @@ class UserController extends Controller
     public function index()
     {
         // User::all();
-
-        $users = User::with('departamento')->get();
-        //$users = User::all();
+        $users = User::all();
         return view('sicepla.super-admin.super-admin-usuarios',compact('users'));
         //return User::all();
     }
