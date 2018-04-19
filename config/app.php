@@ -12,8 +12,8 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Ejemplo',
-    'description' => 'Sistema de ....' ,
+    'name' => 'Luminess - Soft',
+    'description' => 'Software de apoyo y control en la Iluminación' ,
 
     /*
     |--------------------------------------------------------------------------
