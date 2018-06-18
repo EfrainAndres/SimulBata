@@ -26,3 +26,5 @@ Route::get('/images', '\App\Container\Sicepla\Src\Controllers\InfoGeneralControl
 
 Route::get('/simulacion', '\App\Container\Sicepla\Src\Controllers\InfoGeneralController@simulacion')
         ->name('simulacion');
+
+Route::resource('calLumens','LumenController');
