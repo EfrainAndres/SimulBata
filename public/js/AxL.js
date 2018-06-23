@@ -1,8 +1,24 @@
-function cal() {
-    try {
-      var a = parseInt(document.f.num1.value),
-          b = parseInt(document.f.num2.value);
-      document.f.sum.value = (a * b)/10;
-    } catch (e) {
+function sumar() {
+
+  var total = 0;
+
+  $(".monto").each(function() {
+
+    if (isNaN(parseFloat($(this).val()))) {
+
+      total += 0;
+
+    } else {
+
+      m1 = document.getElementById("txt_campo_1").value;
+      m2 = document.getElementById("txt_campo_2").value;
+      r = m1*m2;
+
     }
-  }
+
+  });
+
+  //alert(total);
+  document.getElementById('spTotal').innerHTML = r;
+
+}

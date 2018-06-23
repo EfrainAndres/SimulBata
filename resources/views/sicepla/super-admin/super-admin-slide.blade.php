@@ -11,8 +11,7 @@
 
                 <div class="portlet-body">
     
-                <iframe src="//www.slideshare.net/slideshow/embed_code/key/tjx4Qx0caf3DmO?startSlide=2" width="100%" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> </div>
-
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ_WIsntqG1v85LK-Um_Xxod6lD8SKlMTxFQ2Pc-awozgZ9FLgjLO2-X4SgVD8r6sSipe63-AUwgE6c/embed?start=false&loop=true&delayms=60000" frameborder="0" width="100%" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                   </div>
                 </div>
 

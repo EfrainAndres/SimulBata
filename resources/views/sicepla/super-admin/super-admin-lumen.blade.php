@@ -18,13 +18,24 @@
         <div class="portlet-body">
         <div class="row">
 
-            <form name="f">
-            <p>Largo: <input type="number" placeholder="Largo de la Sala" name="num1" value="" onchange="cal()" /></p>
+            
+            <p>Largo: <input type="number" placeholder="Largo de la Sala" id="txt_campo_1" class="monto" onkeyup="sumar();" /></p>
             <label><b>X</b></label>
-            <p>Ancho: <input type="number" placeholder="Ancho de la Sala" name="num2" value="" onchange="cal()" /></p>
+            <p>Ancho: <input type="number" placeholder="Ancho de la Sala" id="txt_campo_2" class="monto" onkeyup="sumar();" /></p>
             <label><b>=</b></label>
-            <p>Cálculo: <input type="number" name="sum" value="" readonly="readonly" /></p>
-            </form>
+            <p>Cálculo: <label id="spTotal"></label></p>
+
+            <br>
+            <br>
+
+            @component('components.panel', ['icon' => 'icon-layers', 'title' => 'Introducción','contenido'=>'Hoy en dia, todo lo que hace referencia a iluminación  (Luz, vatios, etc), es importante en nuestro diario vivir, ya sea su uso el trabajo, estudio , recreacion, etc','class'=>'panel-success'])
+            @endcomponent
+
+            <br>
+            <br>
+            <img src="/fotos/3.jpeg" width="100" height="100" id="img100" style="display:none;" alt="Lumenes en diferentes areas">
+            <img src="/fotos/4.jpeg" width="100" height="100" id="img200" style="display:none;" alt="Lumenes en diferentes areas">
+
 
         </div>
         </div>
@@ -50,6 +61,11 @@
             @component('components.panel', ['icon' => 'icon-layers', 'title' => 'Introducción','contenido'=>'Hoy en dia, todo lo que hace referencia a iluminación  (Luz, vatios, etc), es importante en nuestro diario vivir, ya sea su uso el trabajo, estudio , recreacion, etc','class'=>'panel-success'])
             @endcomponent
 
+            <br>
+            <br>
+            <img src="/fotos/3.jpeg" width="100" height="100" id="img100" style="display:none;" alt="Lumenes en diferentes areas">
+            <img src="/fotos/4.jpeg" width="100" height="100" id="img200" style="display:none;" alt="Lumenes en diferentes areas">
+
         </div>
         </div>
         </div>
@@ -71,6 +87,9 @@
     </script>
 
     <script src="/js/AxL.js" type="text/javascript">
+    </script>
+
+    <script src="/js/image.js" type="text/javascript">
     </script>
 @endpush
 
