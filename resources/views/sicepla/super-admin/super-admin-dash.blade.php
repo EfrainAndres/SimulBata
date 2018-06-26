@@ -5,11 +5,20 @@
 ])
 @endcomponent
 
-@component('components.nav-link', [
+
+
+@component('components.nav-dropdown', ['icon'=> 'fa fa-book','title'=>'Cálculos & Simulación'])
+    @component('components.nav-link', [
+    'icon' => 'fa fa-book',
+    'link'=>route('lumenIlu'),
+    'title' => 'Calculo M² & Luminarias'])
+    @endcomponent
+    @component('components.nav-link', [
     'icon' => 'fa fa-info',
-    'title' => 'Cálculos & Simulación',
-    'link' => route('calLumens.index')
-])
+    'title' => 'Calculo M²',
+    'link' => route('lumenmdos')
+    ])
+    @endcomponent
 @endcomponent
 
 @component('components.nav-link', [

@@ -14,10 +14,15 @@ class LumenController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function index()
+    public function lumenmdos()
     {
 
-      return view('sicepla.super-admin.super-admin-lumen');
+      return view('sicepla.super-admin.super-admin-lumenm2');
     }
 
+    public function lumenIlu()
+    {
+
+      return view('sicepla.super-admin.super-admin-lumenilu');
+    }
 }

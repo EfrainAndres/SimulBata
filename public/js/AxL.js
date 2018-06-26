@@ -14,11 +14,14 @@ function sumar() {
       m2 = document.getElementById("txt_campo_2").value;
       r = m1*m2;
 
+      s = r/10;
+
     }
 
   });
 
   //alert(total);
   document.getElementById('spTotal').innerHTML = r;
+  document.getElementById('spTotalLumen').innerHTML = s;
 
 }
