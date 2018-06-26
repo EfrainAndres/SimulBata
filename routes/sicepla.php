@@ -32,3 +32,9 @@ Route::get('/lumenmdos', '\App\Container\Sicepla\Src\Controllers\LumenController
 
 Route::get('/lumenIlu', '\App\Container\Sicepla\Src\Controllers\LumenController@lumenIlu')
         ->name('lumenIlu');
+
+Route::get('/lumenLux', '\App\Container\Sicepla\Src\Controllers\LumenController@lumenLux')
+        ->name('lumenLux');
+
+Route::get('/lumenDispersion', '\App\Container\Sicepla\Src\Controllers\LumenController@lumenDispersion')
+        ->name('lumenDispersion');

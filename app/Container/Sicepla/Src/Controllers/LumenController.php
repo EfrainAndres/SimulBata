@@ -25,4 +25,16 @@ class LumenController extends Controller
 
       return view('sicepla.super-admin.super-admin-lumenilu');
     }
+
+    public function lumenLux()
+    {
+
+      return view('sicepla.super-admin.super-admin-lumenLux');
+    }
+
+    public function lumenDispersion()
+    {
+
+      return view('sicepla.super-admin.super-admin-lumenDispersion');
+    }
 }
