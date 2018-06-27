@@ -14,14 +14,33 @@
 
         <br>
 
-        <canvas id="graph" width="800px" height="400px"></canvas>
-
-        <button id="btn1">
+        <div class="col-md-8"><canvas id="graph" width="800px" height="400px"></canvas></div>
+        
+        <div class="col-md-4">
+        <button class="btn btn-success" id="btn1">
         Option 1
         </button>
-        <button id="btn2">
+        <button class="btn btn-success" id="btn2">
         Option 2
         </button>
+        <button class="btn btn-success" id="btn3">
+        Option 3
+        </button>
+        <button class="btn btn-success" id="btn4">
+        Option 4
+        </button>
+        <button class="btn btn-success" id="btn5">
+        Option 5
+        </button>
+        </div>
+        
+        <div align="center"> <img src="/m2/fluorescentes.jpg" width="20%" height="350" id="imgFluorescente" style="display:none;" alt="Lumenes en diferentes areas">
+            <img src="/m2/halogena.jpg" width="20%" height="350" id="imgHalogena" style="display:none;" alt="Lumenes en diferentes areas">
+            <img src="/m2/incandescente.jpg" width="20%" height="350" id="imgIncandescente" style="display:none;" alt="Lumenes en diferentes areas">
+            <img src="/m2/led.jpg" width="20%" height="350" id="imgLed" style="display:none;" alt="Lumenes en diferentes areas">
+            <img src="/m2/tubo.jpg" width="20%" height="350" id="imgTubo" style="display:none;" alt="Lumenes en diferentes areas">
+        </div>
+            
               
 	     
 

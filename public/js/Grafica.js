@@ -27,7 +27,3 @@
     var context = document.querySelector('#graph').getContext('2d');
     new Chart(context).Line(data);
     
-$("#btn1").on("click", function() {
-     var context1 = document.querySelector('#graph').getContext('2d');
-    new Chart(context1).Line(data);
-  });

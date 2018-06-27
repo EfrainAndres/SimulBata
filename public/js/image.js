@@ -161,3 +161,48 @@ $("#downlight_room").on('change',function(){
     }
 
 });
+
+$('#btn1').click(function () {
+
+        $("#imgFluorescente").show();
+        $("#imgHalogena").hide();
+        $("#imgIncandescente").hide();
+        $("#imgLed").hide();
+        $("#imgTubo").hide();
+});
+
+$('#btn2').click(function () {
+
+    $("#imgFluorescente").hide();
+    $("#imgHalogena").show();
+    $("#imgIncandescente").hide();
+    $("#imgLed").hide();
+    $("#imgTubo").hide();
+});
+
+$('#btn3').click(function () {
+
+    $("#imgFluorescente").hide();
+    $("#imgHalogena").hide();
+    $("#imgIncandescente").show();
+    $("#imgLed").hide();
+    $("#imgTubo").hide();
+});
+
+$('#btn4').click(function () {
+
+    $("#imgFluorescente").hide();
+    $("#imgHalogena").hide();
+    $("#imgIncandescente").hide();
+    $("#imgLed").show();
+    $("#imgTubo").hide();
+});
+
+$('#btn5').click(function () {
+
+    $("#imgFluorescente").hide();
+    $("#imgHalogena").hide();
+    $("#imgIncandescente").hide();
+    $("#imgLed").hide();
+    $("#imgTubo").show();
+});
