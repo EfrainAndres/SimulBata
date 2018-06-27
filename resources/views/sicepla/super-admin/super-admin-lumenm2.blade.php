@@ -3,20 +3,17 @@
 
 @section('content')
 
-    <div class="col-md-12">
-    @component('components.portlet', ['icon' => 'fa fa-users', 'title' => 'Calculo Lumens'])
-
-        <div id="app">
-
-        <div class="panel-body">
-
-            <div class="portlet-body">
         <div class="col-md-12">
         {{-- BEGIN HTML SAMPLE --}}
         @component('components.portlet', ['icon' => 'fa-square', 'title' => 'Calcular numero de lumens necesarios (Largo x Ancho)'])
         <div class="panel-body">
         <div class="portlet-body">
         <div class="row">
+
+        <button class="btn btn-success" onclick="printHTML()">Generar PDF</button>
+
+        <br>
+        <br>
 
             <div class="col-md-3">
             <p>Largo: <input type="number" placeholder="Largo de la Sala" id="txt_campo_1" class="monto" onkeyup="sumar();" /></p>
@@ -89,14 +86,6 @@
         @endcomponent
         
         </div>
-
-        </div>
-        </div>
-        </div>
-             
-
-    @endcomponent
-    </div>
 @endsection
 
 @push('functions')
@@ -107,6 +96,9 @@
     </script>
 
     <script src="/js/image.js" type="text/javascript">
+    </script>
+
+    <script src="/js/Pdf.js" type="text/javascript">
     </script>
 @endpush
 

@@ -3,14 +3,6 @@
 
 @section('content')
 
-    <div class="col-md-12">
-    @component('components.portlet', ['icon' => 'fa fa-users', 'title' => 'Calculo Lumens'])
-
-        <div id="app">
-
-        <div class="panel-body">
-
-            <div class="portlet-body">
 
         <div class="col-md-12">
         {{-- BEGIN HTML SAMPLE --}}
@@ -55,6 +47,11 @@
                   </tr>
                 </table>
               </form>
+
+              <br>
+
+              <div><button class="btn btn-success" onclick="printHTML()">Generar PDF</button></div>
+              
               
 	     
 
@@ -65,13 +62,6 @@
         
         </div>
 
-        </div>
-        </div>
-        </div>
-             
-
-    @endcomponent
-    </div>
 @endsection
 
 @push('functions')
@@ -79,6 +69,9 @@
     </script>
 
     <script src="/js/image.js" type="text/javascript">
+    </script>
+
+    <script src="/js/Pdf.js" type="text/javascript">
     </script>
 
 @endpush

@@ -37,4 +37,10 @@ class LumenController extends Controller
 
       return view('sicepla.super-admin.super-admin-lumenDispersion');
     }
+
+    public function lumenGrafica()
+    {
+
+      return view('sicepla.super-admin.super-admin-lumenGrafica');
+    }
 }

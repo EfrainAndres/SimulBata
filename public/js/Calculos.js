@@ -113,5 +113,5 @@ var last_area;
     }
 		var spread_value = 2 * distance * Math.tan(angle/2 * Math.PI/180);
 		var area_value = Math.PI * Math.pow(spread_value/2,2);
-    document.getElementById("res_spread").innerHTML  = "The resulting light spread is "+format_number(spread_value,3)+"m.<br>The coverage area is "+format_number(area_value,3)+"m<sup>2</sup>.";
+    document.getElementById("res_spread").innerHTML  = "La dispersión de luz resultante es de "+format_number(spread_value,3)+"m.<br>El área de cobertura es de  "+format_number(area_value,3)+"m<sup>2</sup>.";
   }

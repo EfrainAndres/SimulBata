@@ -9,14 +9,14 @@
 @component('components.nav-dropdown', ['icon'=> 'fa fa-play','title'=>'Cálculos & Simulación'])
     @component('components.nav-link', [
     'icon' => 'fa fa-book',
-    'link'=>route('lumenIlu'),
-    'title' => 'Cálculo M² & Luminarias'])
-    @endcomponent
-    @component('components.nav-link', [
-    'icon' => 'fa fa-book',
     'title' => 'Cálculo M²',
     'link' => route('lumenmdos')
     ])
+    @endcomponent
+    @component('components.nav-link', [
+    'icon' => 'fa fa-book',
+    'link'=>route('lumenIlu'),
+    'title' => 'Cálculo M² & Luminarias'])
     @endcomponent
     @component('components.nav-link', [
     'icon' => 'fa fa-book',
@@ -29,6 +29,11 @@
     'title' => 'Cálculo Dispersion de Luz',
     'link' => route('lumenDispersion')
     ])
+    @endcomponent
+    @component('components.nav-link', [
+    'icon' => 'fa fa-graph',
+    'link'=>route('lumenGrafica'),
+    'title' => 'Graficas'])
     @endcomponent
 @endcomponent
 

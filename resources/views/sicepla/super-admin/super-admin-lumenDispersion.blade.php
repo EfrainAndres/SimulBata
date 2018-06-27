@@ -3,21 +3,16 @@
 
 @section('content')
 
-    <div class="col-md-12">
-    @component('components.portlet', ['icon' => 'fa fa-users', 'title' => 'Calculo Lumens'])
-
-        <div id="app">
-
-        <div class="panel-body">
-
-            <div class="portlet-body">
-
         <div class="col-md-12">
         {{-- BEGIN HTML SAMPLE --}}
         @component('components.portlet', ['icon' => 'fa fa-play', 'title' => 'Calcula la extensión de la luz sobre una superficie plana'])
         <div class="panel-body">
         <div class="portlet-body">
         <div class="row">
+
+        <button class="btn btn-success" onclick="printHTML()">Generar PDF</button>
+
+        <br>
 
             <form method="post" name="spread_calculator">
                 <table border="0" width="100%" cellspacing="1" cellpadding="2" class="infoBox">
@@ -66,13 +61,6 @@
         
         </div>
 
-        </div>
-        </div>
-        </div>
-             
-
-    @endcomponent
-    </div>
 @endsection
 
 @push('functions')
@@ -80,6 +68,9 @@
     </script>
 
     <script src="/js/image.js" type="text/javascript">
+    </script>
+
+    <script src="/js/Pdf.js" type="text/javascript">
     </script>
 
 @endpush
