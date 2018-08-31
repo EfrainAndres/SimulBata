@@ -30,11 +30,6 @@
     'link' => route('lumenDispersion')
     ])
     @endcomponent
-    @component('components.nav-link', [
-    'icon' => 'fa fa-graph',
-    'link'=>route('lumenGrafica'),
-    'title' => 'Graficas'])
-    @endcomponent
 @endcomponent
 
 @component('components.nav-link', [

@@ -18,10 +18,10 @@
     @component('components.panel', ['icon' => 'icon-layers', 'title' => 'Nota!!!','contenido'=>'El numero de lúmenes, que se utiliza para iluminar un salon de clases equivale a 400 - 500 Lm, teniendo en cuenta la superfice total del salon, esta puede variar','class'=>'panel-success'])
             @endcomponent
     <div class="col-md-6">
-    <img src="/fotos/3.jpeg" width="500" height="500" alt="Lumenes en diferentes areas">
+    <img src="/fotos/3.jpg" width="500" height="500" alt="Lumenes en diferentes areas">
     </div>
     <div class="col-md-6">
-    <img src="/fotos/2.jpeg" width="500" height="500" alt="Lumenes en diferentes areas">
+    <img src="/fotos/2.png" width="500" height="500" alt="Lumenes en diferentes areas">
     </div>
     <div>
 
